@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Harish S Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="assets/harish_profile.jpg">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+    .error-code {
+      font-size: clamp(5rem, 15vw, 10rem);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--chroma-blue) 0%, var(--chroma-violet) 50%, var(--chroma-red) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    .error-msg { color: var(--color-text-secondary); font-size: 1.1rem; max-width: 400px; }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-code">404</div>
+    <h2>Packet Not Found</h2>
+    <p class="error-msg">The page you're looking for doesn't exist or has been moved. Let's navigate back to base.</p>
+    <a href="index.html" class="btn btn-primary">↩ Return to Portfolio</a>
+  </div>
+</body>
+</html>
+

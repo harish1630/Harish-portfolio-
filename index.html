@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090e1f">
+  <title>Harish S | Cybersecurity Engineer & AI Enginner </title>
+  <meta name="description" content="Official portfolio of Harish S — Cybersecurity Engineering student specialized in network defense, ethical hacking, reverse engineering, and secure systems development.">
+  <meta name="keywords" content="Harish S, Cybersecurity,AI Enginner, Reverse Engineering, Memory Forensics,RAG, Wireshark,Lang Graph, Chennai, MIT Square, Cyber Sanskar">
+  <meta name="author" content="Harish S">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Harish S | Cybersecurity Portfolio">
+  <meta property="og:description" content=" Cybersecurity Engineer focused on network defense, AI Enginner .">
+  <meta property="og:image" content="assets/harish_profile.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://harish1630.github.io/portfolio/">
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://harish1630.github.io/portfolio/">
+
+  <!-- Favicon (PNG square crop for best browser support) -->
+  <link rel="icon" type="image/jpeg" href="assets/harish_profile.jpg">
+  <link rel="apple-touch-icon" href="assets/harish_profile.jpg">
+
+  <!-- Google Fonts: Poppins, Bebas Neue, JetBrains Mono & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet (Chromatic Dual-Mode Theme) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= FLOATING THEME TOGGLE ================= -->
+  <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Color Theme" title="Toggle Light / Dark Chromatic Mode">
+    <div class="theme-toggle-track">
+      <svg class="theme-icon theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="theme-icon theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+      <span class="theme-mode-text">Theme</span>
+    </div>
+  </button>
+
+  <!-- ================= PRELOADER (RED & BLUE CHROMATIC CORE) ================= -->
+  <div id="loader-wrapper">
+    <div class="loader-cyber">
+      <div class="loader-ring"></div>
+      <div class="loader-ring-outer"></div>
+      <div class="loader-text">[ INVITING MS/MR ROYAL ]</div>
+    </div>
+    <div class="loader-status">INITIALIZING SECURITY SYSTEM </div>
+  </div>
+
+  <!-- ================= FLOATING DOCK NAV ================= -->
+  <nav id="dock-nav" aria-label="Main Navigation">
+    <div class="tooltip">
+      <a href="#home" class="link active" data-nav="home" aria-label="Home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      </a>
+      <span class="tooltiptext">Home</span>
+    </div>
+
+    <div class="tooltip">
+      <a href="#about" class="link" data-nav="about" aria-label="About">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+      <span class="tooltiptext">About</span>
+    </div>
+
+    <div class="tooltip">
+      <a href="#skills" class="link" data-nav="skills" aria-label="Skills">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+      </a>
+      <span class="tooltiptext">Skills</span>
+    </div>
+
+    <div class="tooltip">
+      <a href="#projects" class="link" data-nav="projects" aria-label="Projects">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+      </a>
+      <span class="tooltiptext">Projects</span>
+    </div>
+
+    <div class="tooltip">
+      <a href="#achievements" class="link" data-nav="achievements" aria-label="Achievements">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+      </a>
+      <span class="tooltiptext">Achievements</span>
+    </div>
+
+    <!-- Contact section styled as WORK -->
+    <div class="tooltip">
+      <a href="#work" class="link" data-nav="work" aria-label="Work With Me">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+      </a>
+      <span class="tooltiptext">Work</span>
+    </div>
+
+    <!-- Quick Theme Toggle in Dock Nav -->
+    <div class="tooltip">
+      <a href="javascript:void(0)" class="link theme-dock-toggle" aria-label="Toggle Theme">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </a>
+      <span class="tooltiptext">Toggle Theme</span>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION (FIRST PAGE - ONLY PLACE WITH IMAGE) ================= -->
+  <section id="home">
+    <div class="blue-line1"></div>
+    <div class="blue-line2"></div>
+
+    <!-- Floating Socials (Left Column) -->
+    <div class="header_socials">
+      <a href="javascript:void(0)" class="like-btn" id="like-button" title="Like portfolio">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        <span class="hide" id="like-text">Likes: 142</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/harish-s-478b7a325?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        <span class="hide">LinkedIn</span>
+      </a>
+
+      <a href="https://github.com/harish1630" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        <span class="hide">GitHub</span>
+      </a>
+
+      <a href="mailto:joy862380@gmail.com" title="Email Harish">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        <span class="hide">joy862380@gmail.com</span>
+      </a>
+
+      <a href="tel:+916385823231" title="Call Harish">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span class="hide">+91 6385823231</span>
+      </a>
+    </div>
+
+    <!-- Scroll Down Link -->
+    <a href="#about" class="scroll__down">Scroll Down ↘</a>
+
+    <div class="container hero-content">
+      <!-- Status Badge -->
+      <div class="hero-badge">
+        <span class="badge-pulse"></span>
+        <span class="badge badge-chroma">OPEN FOR WORK • CYBERSECURITY ENGINEERING (2026)</span>
+      </div>
+
+      <h5>Hello, I'm</h5>
+      <h1 class="hero-name">Harish <span class="highlight-letter">S</span></h1>
+
+      <!-- Dynamic Typewriter Subtitle -->
+      <div class="hero-role-wrapper">
+        <span>I am a </span>
+        <span id="typewriter-text" class="typewriter-dynamic">Cybersecurity Engineer</span>
+        <span class="typing-cursor"></span>
+      </div>
+
+      <p class="hero-tagline">
+        Specialized in Network Defense,AI Enginnerg & Secure Systems Development.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="cta">
+        <a href="assets/Harish_S_Resume.pdf" download="Harish_S_Resume.pdf" class="btn" id="download-cv-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download CV
+        </a>
+        <a href="#work" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          Work With Me
+        </a>
+        <a href="#projects" class="btn btn-cyber">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          Explore Projects
+        </a>
+      </div>
+
+      <!-- ================= HERO SHOWCASE CARD (ONLY IMAGE IN PORTFOLIO) ================= -->
+      <div class="hero-full-grid-wrapper">
+        <div class="hero-image-grid-card">
+          <div class="grid-card-inner">
+            <img src="assets/harish_profile.jpg" alt="Harish S - Welcome to My Portfolio Workspace" class="hero-grid-img">
+            <div class="hero-grid-cyber-overlay">
+              <div class="hero-grid-meta">
+                <span class="cyber-chip"><span class="chip-dot"></span> RED &amp; BLUE CHROMATIC LAB</span>
+                <h3>Harish S</h3>
+                <p>Chennai, India • joy862380@gmail.com • +91 6385823231</p>
+              </div>
+              <div class="hero-grid-tags">
+                <span class="tag-pill">CybersecurityEngineer</span>
+                <span class="tag-pill">AI Engineer</span>
+                <span class="tag-pill">learn</span>
+                <span class="tag-pill">fail</span>
+                <span class="tag-pill">Retry</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-grid-footer-bar">
+            <span class="spec-label">SYSTEM: <span>Linux / Windows</span></span>
+            <span class="spec-label">CGPA: <span>8.0 / 10.0</span></span>
+            <span class="spec-label">STATUS: <span class="status-active">AVAILABLE FOR WORK</span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION (CODING STYLE - NO IMAGE) ================= -->
+  <section id="about">
+    <h5>Get To Know</h5>
+    <h2>About Me</h2>
+
+    <div class="container about__container-full">
+      
+      <!-- 3 Highlight cards styled with coding accents -->
+      <div class="about__cards">
+        <article class="about__card">
+          <div class="about__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <div class="code-comment font-code">// Credentials</div>
+          <h5>Certifications</h5>
+          <small class="font-code">4+ Global (Cisco, IBM, AWS)</small>
+        </article>
+
+        <article class="about__card">
+          <div class="about__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <div class="code-comment font-code">// Academics</div>
+          <h5>Score: 8.0 CGPA</h5>
+          <small class="font-code">B.E. Cybersecurity (2022-26)</small>
+        </article>
+
+        <article class="about__card">
+          <div class="about__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <div class="code-comment font-code">// Research</div>
+          <h5>Projects & Papers</h5>
+          <small class="font-code">Malware Forensics & Rust Wiper</small>
+        </article>
+      </div>
+
+      <!-- ================= CODING STYLE ABOUT TERMINAL / IDE ================= -->
+      <div class="code-ide-window">
+        <div class="code-ide-header">
+          <div class="ide-controls">
+            <span class="ide-dot dot-red"></span>
+            <span class="ide-dot dot-yellow"></span>
+            <span class="ide-dot dot-green"></span>
+          </div>
+          <div class="ide-tabs">
+            <button class="ide-tab-btn active" data-tab-code="rust">
+              <span class="tab-icon"> </span> harish_bio.rs
+            </button>
+            <button class="ide-tab-btn" data-tab-code="json">
+              <span class="tab-icon"> </span> engineer.json
+            </button>
+            <button class="ide-tab-btn" data-tab-code="shell">
+              <span class="tab-icon"> </span> terminal.sh
+            </button>
+          </div>
+          <div class="ide-lang font-code">UTF-8 • Rust</div>
+        </div>
+
+        <!-- Code View 1: Rust Definition -->
+        <div class="code-ide-body font-code active" id="code-rust">
+          <div class="code-line"><span class="line-no">01</span><span class="tok-comment">// CAREER OBJECTIVE & PROFILE MANIFEST</span></div>
+          <div class="code-line"><span class="line-no">02</span><span class="tok-keyword">pub struct</span> <span class="tok-type">CybersecurityEngineer</span> {</div>
+          <div class="code-line"><span class="line-no">03</span>    <span class="tok-prop">name</span>: <span class="tok-string">"Harish S"</span>,</div>
+          <div class="code-line"><span class="line-no">04</span>    <span class="tok-prop">location</span>: <span class="tok-string">"Chennai, India"</span>,</div>
+          <div class="code-line"><span class="line-no">05</span>    <span class="tok-prop">degree</span>: <span class="tok-string">"B.E Computer Science Engineering (Cybersecurity)"</span>,</div>
+          <div class="code-line"><span class="line-no">06</span>    <span class="tok-prop">institution</span>: <span class="tok-string">"Gojan School of Business abd technology, Chennai"</span>,</div>
+          <div class="code-line"><span class="line-no">07</span>    <span class="tok-prop">batch</span>: <span class="tok-number">2022..=2026</span>,</div>
+          <div class="code-line"><span class="line-no">08</span>    <span class="tok-prop">cgpa</span>: <span class="tok-number">8.0</span>,</div>
+          <div class="code-line"><span class="line-no">08</span>    <span class="tok-prop">contact</span>: <span class="tok-string">"joy862380@gmail.com | +91 6385823231"</span>,</div>
+          <div class="code-line"><span class="line-no">09</span>    <span class="tok-prop">github</span>: <span class="tok-string">"https://github.com/harish1630"</span>,</div>
+          <div class="code-line"><span class="line-no">10</span>    <span class="tok-prop">linkedin</span>: <span class="tok-string">"https://www.linkedin.com/in/harish-s-478b7a325"</span>,</div>
+          <div class="code-line"><span class="line-no">11</span>    <span class="tok-prop">specializations</span>: <span class="tok-type">vec!</span>[</div>
+          <div class="code-line"><span class="line-no">12</span>        <span class="tok-string">"Network Defense & Packet Analysis"</span>,</div>
+          <div class="code-line"><span class="line-no">13</span>        <span class="tok-string">"Ethical Hacking & Vulnerability Assessment"</span>,</div>
+          <div class="code-line"><span class="line-no">14</span>        <span class="tok-string">"Reverse Engineering on Fileless Malware using Memory forensic"</span>,</div>
+          <div class="code-line"><span class="line-no">15</span>        <span class="tok-string">"Rust Systems Security on Alpine Linux"</span></div>
+          <div class="code-line"><span class="line-no">16</span>    ],</div>
+          <div class="code-line"><span class="line-no">17</span>    <span class="tok-prop">open_for_work</span>: <span class="tok-keyword">true</span></div>
+          <div class="code-line"><span class="line-no">18</span>}</div>
+          <div class="code-line"><span class="line-no">19</span></div>
+          <div class="code-line"><span class="line-no">20</span><span class="tok-keyword">impl</span> <span class="tok-type">CybersecurityEngineer</span> {</div>
+          <div class="code-line"><span class="line-no">21</span>    <span class="tok-comment">/// Im  passionate about applying practical security skills</span></div>
+          <div class="code-line"><span class="line-no">22</span>    <span class="tok-keyword">pub fn</span> <span class="tok-fn">mission</span>(&amp;<span class="tok-keyword">self</span>) -&gt; <span class="tok-type">&amp;'static str</span> {</div>
+          <div class="code-line"><span class="line-no">23</span>        <span class="tok-string">"Solve real-world cyber challenges and safeguard critical digital infrastructures."</span></div>
+          <div class="code-line"><span class="line-no">24</span>    }</div>
+          <div class="code-line"><span class="line-no">25</span>}</div>
+        </div>
+
+        <!-- Code View 2: JSON Profile -->
+        <div class="code-ide-body font-code" id="code-json">
+          <div class="code-line"><span class="line-no">01</span>{</div>
+          <div class="code-line"><span class="line-no">02</span>  <span class="tok-prop">"candidate"</span>: <span class="tok-string">"Harish S"</span>,</div>
+          <div class="code-line"><span class="line-no">03</span>  <span class="tok-prop">"status"</span>: <span class="tok-string">"Cybersecurity Engineering "</span>,</div>
+          <div class="code-line"><span class="line-no">04</span>  <span class="tok-prop">"profiles"</span>: {</div>
+          <div class="code-line"><span class="line-no">05</span>    <span class="tok-prop">"github"</span>: <span class="tok-string">"https://github.com/harish1630"</span>,</div>
+          <div class="code-line"><span class="line-no">06</span>    <span class="tok-prop">"linkedin"</span>: <span class="tok-string">"https://www.linkedin.com/in/harish-s-478b7a325"</span></div>
+          <div class="code-line"><span class="line-no">07</span>  },</div>
+          <div class="code-line"><span class="line-no">08</span>  <span class="tok-prop">"education"</span>: {</div>
+          <div class="code-line"><span class="line-no">09</span>    <span class="tok-prop">"degree"</span>: <span class="tok-string">"B.E Computer Science Engineering (Cybersecurity)"</span>,</div>
+          <div class="code-line"><span class="line-no">10</span>    <span class="tok-prop">"duration"</span>: <span class="tok-string">"2022 - 2026"</span>,</div>
+          <div class="code-line"><span class="line-no">11</span>    <span class="tok-prop">"cgpa"</span>: <span class="tok-number">8.0</span></div>
+          <div class="code-line"><span class="line-no">12</span>  },</div>
+          <div class="code-line"><span class="line-no">13</span>  <span class="tok-prop">"industry_recognition"</span>: [</div>
+          <div class="code-line"><span class="line-no">14</span>    <span class="tok-string">"Cyber Sanskar 2025: Practical Cybersecurity Skills &amp; Industrial Readiness"</span>,</div>
+          <div class="code-line"><span class="line-no">15</span>    <span class="tok-string">"MIT Square: Data Technology Intern (Python &amp; Data Pipelines)"</span>,</div>
+          <div class="code-line"><span class="line-no">16</span>    <span class="tok-string">"Novi Tech: Data Analytics &amp; Statistical Modeling Training"</span></div>
+          <div class="code-line"><span class="line-no">17</span>  ],</div>
+          <div class="code-line"><span class="line-no">18</span>  <span class="tok-prop">"certifications"</span>: {</div>
+          <div class="code-line"><span class="line-no">19</span>    <span class="tok-prop">"cisco"</span>: [<span class="tok-string">"Introduction Cybersecurity (2025)"</span>, <span class="tok-string">"Python Essentials (2025)"</span>],</div>
+          <div class="code-line"><span class="line-no">20</span>    <span class="tok-prop">"ibm"</span>: <span class="tok-string">"AI Fundamentals (2024)"</span>,</div>
+          <div class="code-line"><span class="line-no">21</span>    <span class="tok-prop">"aws"</span>: <span class="tok-string">"Cloud Essentials (2024)"</span></div>
+          <div class="code-line"><span class="line-no">22</span>  }</div>
+          <div class="code-line"><span class="line-no">23</span>}</div>
+        </div>
+
+        <!-- Code View 3: Terminal Shell -->
+        <div class="code-ide-body font-code" id="code-shell">
+          <div class="code-line"><span class="line-no">01</span><span class="tok-term-prompt">harish@cybersec:~$</span> whoami</div>
+
+          <div class="code-line"><span class="line-no">02</span><span class="tok-term-out">Harish S • Cybersecurity Engineer &amp; Ethical Hacker</span></div>
+
+          <div class="code-line"><span class="line-no">03</span><span class="tok-term-prompt">harish@cybersec:~$</span> cat /etc/objective.txt</div>
+
+          <div class="code-line"><span class="line-no">04</span><span class="tok-term-out">"Final-year Cybersecurity Engineering student focused on network defense,</span></div>
+
+          <div class="code-line"><span class="line-no">05</span><span class="tok-term-out">ethical hacking, and reverse engineering. Passionate about applying</span></div>
+
+          <div class="code-line"><span class="line-no">06</span><span class="tok-term-out">practical security skills to solve real-world challenges."</span></div>
+
+          <div class="code-line"><span class="line-no">07</span><span class="tok-term-prompt">harish@cybersec:~$</span> echo $WORK_STATUS</div>
+
+          <div class="code-line"><span class="line-no">08</span><span class="tok-term-success">READY_FOR_HIRE // Full-time &amp; Internship Opportunities Available</span></div>
+
+          <div class="code-line"><span class="line-no">09</span><span class="tok-term-prompt">harish@cybersec:~$</span> <span class="typing-cursor"></span></div>
+        </div>
+      </div>
+
+      <!-- Personal Info Card in Monospace -->
+      <article class="personal__card font-code">
+        <div class="card-header-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <h3>// Personal &amp; Academic Credentials</h3>
+        </div>
+        <div class="personal-grid">
+          <div class="info-item"><span class="tok-keyword">const</span> name = <span class="tok-string">"Harish S"</span>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> location = <span class="tok-string">"Chennai, India"</span>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> degree = <span class="tok-string">"B.E CSE (Cybersecurity)"</span>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> college = <span class="tok-string">"Gojan School of Business and techology Engineering College, Chennai"</span>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> cgpa = <span class="tok-number">8.0</span>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> email = <a href="mailto:joy862380@gmail.com" class="tok-string">"joy862380@gmail.com"</a>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> phone = <a href="tel:+916385823231" class="tok-string">"+91 6385823231"</a>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> github = <a href="https://github.com/harish1630" target="_blank" class="tok-string">"github.com/harish1630"</a>;</div>
+          <div class="info-item"><span class="tok-keyword">const</span> linkedin = <a href="https://www.linkedin.com/in/harish-s-478b7a325" target="_blank" class="tok-string">"linkedin.com/in/harish-s"</a>;</div>
+        </div>
+      </article>
+
+      <!-- Action Buttons -->
+      <div class="about-action-group">
+        <a href="#work" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          Work With Me
+        </a>
+        <a href="assets/Harish_S_Resume.pdf" download="Harish_S_Resume.pdf" class="btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Resume PDF
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills">
+    <h5>Technical Arsenal</h5>
+    <h2>My Skills</h2>
+
+    <div class="container">
+      <div class="skills-filter-bar">
+        <button class="skills-filter-btn active" data-skill-filter="all">All Skills</button>
+        <button class="skills-filter-btn" data-skill-filter="networking">Networking &amp; Defense</button>
+        <button class="skills-filter-btn" data-skill-filter="systems">Systems &amp; Tools</button>
+        <button class="skills-filter-btn" data-skill-filter="dev">Development &amp; Data</button>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- 1. Networking -->
+        <div class="skill-card" data-category="networking">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <h3>Networking &amp; Defense</h3>
+                <small class="text-light">Fundamentals of Networking &amp; Security</small>
+              </div>
+            </div>
+            <span class="badge badge-gold">Core</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>TCP/IP, OSI, Firewalls, Subnetting</span>
+              <span>92%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">TCP/IP</span>
+            <span class="skill-tag">Network Defense</span>
+            <span class="skill-tag">Packet Routing</span>
+            <span class="skill-tag">Cisco Certified</span>
+          </div>
+        </div>
+
+        <!-- 2. Operating Systems -->
+        <div class="skill-card" data-category="systems">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <div>
+                <h3>Operating Systems</h3>
+                <small class="text-light">Linux &amp; Windows Environments</small>
+              </div>
+            </div>
+            <span class="badge">Proficient</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>Kernel, CLI, Permissions &amp; Alpine</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Alpine Linux</span>
+            <span class="skill-tag">Windows</span>
+            <span class="skill-tag">Bash / PowerShell</span>
+          </div>
+        </div>
+
+        <!-- 3. Wireshark -->
+        <div class="skill-card" data-category="networking">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h5l3 8 4-16 3 8h5"></path></svg>
+              </div>
+              <div>
+                <h3>Wireshark</h3>
+                <small class="text-light">Deep Packet Inspection &amp; Analysis</small>
+              </div>
+            </div>
+            <span class="badge">Specialist</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>Traffic Analysis &amp; Anomaly Detection</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PCAP Capture</span>
+            <span class="skill-tag">Display Filters</span>
+            <span class="skill-tag">Protocol Dissection</span>
+            <span class="skill-tag">Threat Hunting</span>
+          </div>
+        </div>
+
+        <!-- 4. Metasploit & Burp Suite -->
+        <div class="skill-card" data-category="systems">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h3>Metasploit &amp; Burp Suite</h3>
+                <small class="text-light">Penetration Testing &amp; Exploitation</small>
+              </div>
+            </div>
+            <span class="badge badge-gold">Advanced</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>Web Pentest, Payloads &amp; Exploits</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Metasploit</span>
+            <span class="skill-tag">Burp Suite</span>
+            <span class="skill-tag">OWASP Top 10</span>
+            <span class="skill-tag">Exploit Payloads</span>
+          </div>
+        </div>
+
+        <!-- 5. Python Development -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3>Python Programming</h3>
+                <small class="text-light">Cisco Certified • Security &amp; Automation</small>
+              </div>
+            </div>
+            <span class="badge badge-gold">Cisco Cert</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>Security Scripting, Forensics &amp; Data</span>
+              <span>94%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 94%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python 3</span>
+            <span class="skill-tag">Automation</span>
+            <span class="skill-tag">Socket Programming</span>
+            <span class="skill-tag">Scapy</span>
+          </div>
+        </div>
+
+        <!-- 6. Rust Systems Security -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"></path><path d="m18 9-6-6-6 6"></path></svg>
+              </div>
+              <div>
+                <h3>Rust Systems Programming</h3>
+                <small class="text-light">Memory Safety, Concurrency &amp; Wiper</small>
+              </div>
+            </div>
+            <span class="badge">Systems</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>Memory Safety, Zero-Cost Abstractions</span>
+              <span>86%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Rust</span>
+            <span class="skill-tag">Memory Safety</span>
+            <span class="skill-tag">Concurrency</span>
+            <span class="skill-tag">Storage Wiper</span>
+          </div>
+        </div>
+
+        <!-- 7. Memory Forensics -->
+        <div class="skill-card" data-category="systems">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"></path><path d="M20 12v8H4v-8"></path><path d="m4 4 16 0"></path><path d="M4 4v4h16V4"></path></svg>
+              </div>
+              <div>
+                <h3>Memory Forensics &amp; Reverse Eng.</h3>
+                <small class="text-light">Fileless Malware &amp; RAM Code Extraction</small>
+              </div>
+            </div>
+            <span class="badge badge-gold">Specialist</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>RAM Dumps &amp; Injected Process Analysis</span>
+              <span>89%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 89%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Volatility</span>
+            <span class="skill-tag">Process Hollowing</span>
+            <span class="skill-tag">RAM Dumps</span>
+            <span class="skill-tag">Hex Forensics</span>
+          </div>
+        </div>
+
+        <!-- 8. Data Tech & Pipelines -->
+        <div class="skill-card" data-category="dev">
+          <div class="skill-header">
+            <div class="skill-icon-title">
+              <div class="skill-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <div>
+                <h3>Data Tech &amp; Analytics</h3>
+                <small class="text-light">MIT Square &amp; Novi Tech Experience</small>
+              </div>
+            </div>
+            <span class="badge">Internship</span>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-info">
+              <span>Pipelines, Database Handling &amp; Preprocessing</span>
+              <span>87%</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 87%;"></div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Pipelines</span>
+            <span class="skill-tag">Database Handling</span>
+            <span class="skill-tag">Statistical Modeling</span>
+            <span class="skill-tag">IBM AI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONSOLIDATED PROJECTS SECTION (NO IMAGES - MERGED SHOWCASE) ================= -->
+  <!-- Fulfills "change media section into project section and remove image expect a first page" -->
+  <section id="projects">
+    <div class="projects-header-wrapper">
+      <h5>Engineering &amp; Defense</h5>
+      <h2>Projects &amp; Security Tools</h2>
+      <p class="text-light">
+        A unified showcase of low-level security engineering, memory forensic research, and defensive automation built by Harish S.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="portfolio__container">
+        
+        <!-- Project 1: Fileless Malware Forensics -->
+        <article class="project-card-cyber">
+          <div class="project-term-bar">
+            <div class="term-bar-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span class="project-filename">~/forensics/fileless_malware_ram.py</span>
+            <span class="project-status-chip">DEPLOYED</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="project-category-row">
+              <span class="project-domain-tag">REVERSE ENGINEERING &amp; FORENSICS</span>
+              <span class="project-date">2025</span>
+            </div>
+
+            <h3>Reverse Engineering on Fileless Malware using Memory Forensics</h3>
+            <p class="project-card-desc">
+              Extracted executable payload code directly from volatile RAM using advanced memory forensic frameworks. Analyzed hidden malicious artifacts without relying on disk-resident files.
+            </p>
+
+            <ul class="project-card-bullets font-code">
+              <li><span class="bullet-icon">▸</span> Investigated process hollowing &amp; DLL injection in volatile memory.</li>
+              <li><span class="bullet-icon">▸</span> Decoded persistence methods to map stealth threat vectors.</li>
+              <li><span class="bullet-icon">▸</span> Automated RAM dump triage and hex artifact extraction in Python.</li>
+            </ul>
+
+            <div class="portfolio__item-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Volatility Framework</span>
+              <span class="tech-pill">Memory Forensics</span>
+              <span class="tech-pill">RAM Extraction</span>
+            </div>
+
+            <div class="project-card-cta">
+              <a href="https://github.com/harish1630/Reverse-Engineering-on-Fileless-malware-using-Memory-Forensics" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Rust Secure Wiper -->
+        <article class="project-card-cyber">
+          <div class="project-term-bar">
+            <div class="term-bar-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span class="project-filename">~/systems/rswipe_wiper.rs</span>
+            <span class="project-status-chip">STABLE</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="project-category-row">
+              <span class="project-domain-tag">SYSTEMS &amp; SECURITY</span>
+              <span class="project-date">2025</span>
+            </div>
+
+            <h3>Rust-Based Secure Storage Wiper with Alpine Linux</h3>
+            <p class="project-card-desc">
+              Developed a military-grade secure storage sanitization utility leveraging Rust's memory safety, concurrency primitives, and zero-cost abstractions. Optimized for live Alpine Linux targets.
+            </p>
+
+            <ul class="project-card-bullets font-code">
+              <li><span class="bullet-icon">▸</span> Complies with DoD 5220.22-M 7-pass storage sanitization protocols.</li>
+              <li><span class="bullet-icon">▸</span> Built for minimal footprint, memory reliability, and live execution.</li>
+              <li><span class="bullet-icon">▸</span> Multi-threaded concurrent cryptographic overwriting pipeline.</li>
+            </ul>
+
+            <div class="portfolio__item-tech">
+              <span class="tech-pill">Rust</span>
+              <span class="tech-pill">Alpine Linux</span>
+              <span class="tech-pill">DoD 5220.22-M</span>
+              <span class="tech-pill">Memory Safety</span>
+            </div>
+
+            <div class="project-card-cta">
+              <a href="https://github.com/optimus0brime/ZTX" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3:illusion AI using RAG-->
+        <article class="project-card-cyber">
+          <div class="project-term-bar">
+            <div class="term-bar-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span class="project-filename">illusion ai .py</span>
+            <span class="project-status-chip">ACTIVE</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="project-category-row">
+              <span class="project-domain-tag">RAG</span>
+              <span class="project-date">2026</span>
+            </div>
+
+            <h3>RAG IN GOVERNMENT SCHEME &amp;ILLUSION AI</h3>
+            <p class="project-card-desc">
+            g to develop a RAG (Retrieval-Augmented Generation) based AI project into a startup, you need a roadmap covering product development, business registration, government recognition, funding, subsidies, incubation, and business growth.
+            </p>
+
+            <ul class="project-card-bullets font-code">
+              <li><span class="bullet-icon">▸</span>Idea identification and problem selection</li>
+              <li><span class="bullet-icon">▸</span> Business registration.</li>
+              <li><span class="bullet-icon">▸</span>Government schemes and funding</li>
+            </ul>
+
+            <div class="portfolio__item-tech">
+              <span class="tech-pill">Wireshark</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Metasploit</span>
+              <span class="tech-pill">Packet Filtering</span>
+            </div>
+
+            <div class="project-card-cta">
+              <a href="https://github.com/harish1630/ILLUSION-AI-USING-RAG" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Web Application Penetration Testing -->
+        <article class="project-card-cyber">
+          <div class="project-term-bar">
+            <div class="term-bar-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span class="project-filename">~/pentest/burpsuite_owasp.py</span>
+            <span class="project-status-chip">VERIFIED</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="project-category-row">
+              <span class="project-domain-tag">ETHICAL HACKING</span>
+              <span class="project-date">2024</span>
+            </div>
+
+            <h3>Web Application Penetration Testing &amp; API Security Suite</h3>
+            <p class="project-card-desc">
+              Comprehensive vulnerability assessment harness focusing on OWASP Top 10 vulnerabilities including SQL Injection, Cross-Site Scripting (XSS), and Broken Authentication using Burp Suite extensions.
+            </p>
+
+            <ul class="project-card-bullets font-code">
+              <li><span class="bullet-icon">▸</span> Interception and payload fuzzing with custom Burp extensions.</li>
+              <li><span class="bullet-icon">▸</span> Token validation, CSRF audit, and privilege escalation checks.</li>
+              <li><span class="bullet-icon">▸</span> Automated Python scripts for endpoint security assessment.</li>
+            </ul>
+
+            <div class="portfolio__item-tech">
+              <span class="tech-pill">Burp Suite</span>
+              <span class="tech-pill">OWASP Top 10</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">API Security</span>
+            </div>
+
+            <div class="project-card-cta">
+              <a href="https://github.com/harish1630" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: MIT Square Data Technology -->
+        <article class="project-card-cyber">
+          <div class="project-term-bar">
+            <div class="term-bar-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span class="project-filename">~/data/pipeline_framework.py</span>
+            <span class="project-status-chip">INTERNSHIP</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="project-category-row">
+              <span class="project-domain-tag">DATA TECHNOLOGY &amp; SECURITY</span>
+              <span class="project-date">MIT Square</span>
+            </div>
+
+            <h3>Data Technology Intern — Secure Pipelines &amp; Preprocessing</h3>
+            <p class="project-card-desc">
+              Managed real-time data pipelines, database architectures, and automated preprocessing workflows using Python. Ensured secure handling and integrity of analytical feeds.
+            </p>
+
+            <ul class="project-card-bullets font-code">
+              <li><span class="bullet-icon">▸</span> Database handling, schema design, and ingestion workflows.</li>
+              <li><span class="bullet-icon">▸</span> Automated Python data preprocessing and validation rules.</li>
+              <li><span class="bullet-icon">▸</span> Data pipeline security and anomaly checks on incoming streams.</li>
+            </ul>
+
+            <div class="portfolio__item-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Data Pipelines</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Preprocessing</span>
+            </div>
+
+            <div class="project-card-cta">
+              <a href="https://github.com/harish1630" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Novi Tech Statistical Analytics -->
+        <article class="project-card-cyber">
+          <div class="project-term-bar">
+            <div class="term-bar-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <span class="project-filename">~/analytics/statistical_modeling.py</span>
+            <span class="project-status-chip">CERTIFIED</span>
+          </div>
+
+          <div class="project-card-body">
+            <div class="project-category-row">
+              <span class="project-domain-tag">DATA ANALYTICS</span>
+              <span class="project-date">Novi Tech</span>
+            </div>
+
+            <h3>Data Analytics &amp; Statistical Modeling</h3>
+            <p class="project-card-desc">
+              Applied knowledge in data-driven decision making, exploratory data analysis, and statistical modeling algorithms for predictive pattern extraction.
+            </p>
+
+            <ul class="project-card-bullets font-code">
+              <li><span class="bullet-icon">▸</span> Statistical modeling and algorithmic pattern extraction.</li>
+              <li><span class="bullet-icon">▸</span> Exploratory data visualization and predictive heuristics.</li>
+              <li><span class="bullet-icon">▸</span> Practical data-driven decision frameworks.</li>
+            </ul>
+
+            <div class="portfolio__item-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Statistical Modeling</span>
+              <span class="tech-pill">Data Analytics</span>
+              <span class="tech-pill">IBM AI</span>
+            </div>
+
+            <div class="project-card-cta">
+              <a href="https://github.com/harish1630" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS & EXPERIENCE SECTION (NO IMAGES) ================= -->
+  <section id="achievements">
+    <h5>Points Of Strength</h5>
+    <h2>Achievements &amp; Recognition</h2>
+
+    <div class="container">
+      <div class="achievements-tabs">
+        <button class="tab-btn active" data-tab="certs">🏆 Certificates &amp; Awards</button>
+        <button class="tab-btn" data-tab="conferences">📢 Conferences &amp; Papers</button>
+        <button class="tab-btn" data-tab="experience">💼 Industrial Experience</button>
+      </div>
+
+      <!-- TAB 1: CERTIFICATES -->
+      <div class="tab-panel active" id="tab-certs">
+        
+        <!-- 1. Cyber Sanskar -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <span class="badge badge-gold">2025 AWARD</span>
+          </div>
+          <h4>Industrial Recognition &amp; Achievement</h4>
+          <div class="achievement-org">Cyber Sanskar • 2025</div>
+          <p class="achievement-desc">Recognized for practical cybersecurity skills, ethical practices, and industrial readiness in digital infrastructure defense.</p>
+          <div class="achievement-meta">
+            <span>Verified Credential</span>
+            <span>Honors</span>
+          </div>
+        </article>
+
+        <!-- 2. Cisco Cybersecurity -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <span class="badge">CISCO VERIFIED</span>
+          </div>
+          <h4>Introduction to Cybersecurity</h4>
+          <div class="achievement-org">Cisco Networking Academy • 2025</div>
+          <p class="achievement-desc">Comprehensive certification covering cyber threats, defense mechanisms, cryptography, and network integrity principles.</p>
+          <div class="achievement-meta">
+            <span>Network Security</span>
+            <span>2025</span>
+          </div>
+        </article>
+
+        <!-- 3. Cisco Python -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <span class="badge">CISCO VERIFIED</span>
+          </div>
+          <h4>Python Essentials</h4>
+          <div class="achievement-org">Cisco Networking Academy • 2025</div>
+          <p class="achievement-desc">Advanced Python programming fundamentals, object-oriented concepts, and automated security scripting.</p>
+          <div class="achievement-meta">
+            <span>Development</span>
+            <span>2025</span>
+          </div>
+        </article>
+
+        <!-- 4. IBM AI Fundamentals -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+            </div>
+            <span class="badge">IBM CERTIFIED</span>
+          </div>
+          <h4>AI Fundamentals</h4>
+          <div class="achievement-org">IBM • 2024</div>
+          <p class="achievement-desc">Foundational concepts in artificial intelligence, neural architectures, data preprocessing, and ethical AI applications.</p>
+          <div class="achievement-meta">
+            <span>Artificial Intelligence</span>
+            <span>2024</span>
+          </div>
+        </article>
+
+        <!-- 5. AWS Cloud Essentials -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <span class="badge">AWS VERIFIED</span>
+          </div>
+          <h4>Cloud Essentials</h4>
+          <div class="achievement-org">Amazon Web Services (AWS) • 2024</div>
+          <p class="achievement-desc">Cloud architecture fundamentals, AWS IAM security policies, VPC networking, and cloud compliance standards.</p>
+          <div class="achievement-meta">
+            <span>Cloud Architecture</span>
+            <span>2024</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- TAB 2: CONFERENCES -->
+      <div class="tab-panel" id="tab-conferences">
+        
+        <!-- 1. Smart India Hackathon -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            </div>
+            <span class="badge badge-gold">NATIONAL LEVEL</span>
+          </div>
+          <h4>Smart India Hackathon</h4>
+          <div class="achievement-org">Inter-College Participant</div>
+          <p class="achievement-desc">Collaborated in rapid software prototyping solving national-level challenges under high-pressure competitive environment.</p>
+          <div class="achievement-meta">
+            <span>Hackathon</span>
+            <span>Competitor</span>
+          </div>
+        </article>
+
+        <!-- 2. International Conference Paper -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+            </div>
+            <span class="badge badge-gold">RESEARCH PAPER</span>
+          </div>
+          <h4>International Conference: Paper Presentation</h4>
+          <div class="achievement-org">Recent Trends and Engineering Technology</div>
+          <p class="achievement-desc">Presented peer-reviewed research paper exploring contemporary trends in cyber engineering and secure communications.</p>
+          <div class="achievement-meta">
+            <span>Paper Presentation</span>
+            <span>Academic</span>
+          </div>
+        </article>
+
+        <!-- 3. NCICT'26 -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <span class="badge">NATIONAL CONF</span>
+          </div>
+          <h4>NCICT'26 (MGR University)</h4>
+          <div class="achievement-org">11th National Conference on Innovative Computing Techniques</div>
+          <p class="achievement-desc">Participated in technical discussions, research exchange, and computing innovations in advanced infrastructure security.</p>
+          <div class="achievement-meta">
+            <span>MGR University</span>
+            <span>2026</span>
+          </div>
+        </article>
+
+        <!-- 4. ICSIDE'26 -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <span class="badge">INTERNATIONAL</span>
+          </div>
+          <h4>ICSIDE'26 (ST Peter College)</h4>
+          <div class="achievement-org">1st International Conf. on Smart Intelligence &amp; Data Engineering</div>
+          <p class="achievement-desc">Presented insights on integrating intelligent data handling with proactive cyber defense strategies.</p>
+          <div class="achievement-meta">
+            <span>ST Peter College</span>
+            <span>2026</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- TAB 3: INDUSTRIAL EXPERIENCE -->
+      <div class="tab-panel" id="tab-experience">
+        
+        <!-- 1. MIT Square -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <span class="badge badge-gold">INTERNSHIP</span>
+          </div>
+          <h4>Data Technology Intern</h4>
+          <div class="achievement-org">MIT Square</div>
+          <p class="achievement-desc">Managed real-time data pipelines, database architectures, and automated preprocessing workflows using Python. Ensured secure handling and integrity of analytical feeds.</p>
+          <div class="achievement-meta">
+            <span>Python &amp; Data Pipelines</span>
+            <span>Industry Experience</span>
+          </div>
+        </article>
+
+        <!-- 2. Novi Tech -->
+        <article class="achievement-card-clean">
+          <div class="achievement-icon-header">
+            <div class="achievement-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+            </div>
+            <span class="badge">TRAINING</span>
+          </div>
+          <h4>Data Analytics Training</h4>
+          <div class="achievement-org">Novi Tech</div>
+          <p class="achievement-desc">Gained comprehensive practical knowledge in data-driven decision making, exploratory data analysis, and statistical modeling algorithms.</p>
+          <div class="achievement-meta">
+            <span>Data Analytics</span>
+            <span>Certification</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= WORK SECTION ================= -->
+  <span id="contact"></span>
+  <section id="work" class="work-section">
+    <h5>Available For Hire &amp; Contracts</h5>
+    <h2>Work With Me</h2>
+    <p class="work-subtext text-light">
+      Seeking full-time roles, cybersecurity engineering internships, or security consulting projects. Let's discuss how my defensive and reverse-engineering skills can fortify your team.
+    </p>
+
+    <div class="container contact__container">
+      
+      <!-- Work Channels -->
+      <div class="contact__options">
+        
+        <!-- Email -->
+        <article class="contact__option">
+          <div class="contact__option-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <h4>Work Email</h4>
+          <h5>joy862380@gmail.com</h5>
+          <a href="mailto:joy862380@gmail.com?subject=Work%20Opportunity%20/%20Cybersecurity%20Role%20for%20Harish%20S" target="_blank">Send Work Proposal ↗</a>
+        </article>
+
+        <!-- Direct Phone / WhatsApp -->
+        <article class="contact__option">
+          <div class="contact__option-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <h4>Direct Call / WhatsApp</h4>
+          <h5>+91 6385823231</h5>
+          <a href="tel:+916385823231">Schedule Phone Call ↗</a>
+          <a href="https://wa.me/916385823231" target="_blank" rel="noopener noreferrer" style="margin-top:0.4rem; color: var(--chroma-emerald);">WhatsApp Chat ↗</a>
+        </article>
+
+        <!-- Location -->
+        <article class="contact__option">
+          <div class="contact__option-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h4>Work Location</h4>
+          <h5>Chennai, Tamil Nadu, India</h5>
+          <span class="text-light" style="font-size: 0.82rem;">Open to Onsite, Hybrid &amp; Remote Roles</span>
+        </article>
+
+        <!-- LinkedIn Channel -->
+        <article class="contact__option">
+          <div class="contact__option-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </div>
+          <h4>LinkedIn</h4>
+          <h5>Harish S</h5>
+          <a href="https://www.linkedin.com/in/harish-s-478b7a325?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+        </article>
+
+        <!-- GitHub Channel -->
+        <article class="contact__option">
+          <div class="contact__option-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <h4>GitHub</h4>
+          <h5>harish1630</h5>
+          <a href="https://github.com/harish1630" target="_blank" rel="noopener noreferrer">View Repositories ↗</a>
+        </article>
+
+      </div>
+
+      <!-- Work Inquiry Form (Dispatches to joy862380@gmail.com) -->
+      <form id="contact-form" class="work-form" action="https://formsubmit.co/joy862380@gmail.com" method="POST">
+        <!-- FormSubmit Config: Sends directly to joy862380@gmail.com -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Portfolio Work Proposal for Harish S [joy862380@gmail.com]">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://harish1630.github.io/portfolio/#work">
+
+        <div class="form-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--chroma-cyan);"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          <span>Initiate Work Inquiry &bull; joy862380@gmail.com</span>
+        </div>
+
+        <input type="text" name="name" id="form-name" placeholder="Your Name / Organization" required>
+        <input type="email" name="email" id="form-email" placeholder="Work Email Address" required>
+        
+        <select name="engagement" id="form-engagement" class="work-select" required>
+          <option value="" disabled selected>Select Work Engagement Type...</option>
+          <option value="Full-Time Role">Full-Time Cybersecurity Engineer Role</option>
+          <option value="Internship">Engineering Internship (2026 Batch)</option>
+          <option value="Penetration Testing">Penetration Testing / Security Audit</option>
+          <option value="Reverse Engineering">Reverse Engineering &amp; Forensics Project</option>
+          <option value="Data &amp; Python">Data Technology &amp; Python Pipelines</option>
+          <option value="Other">Other Collaboration</option>
+        </select>
+
+        <input type="text" name="subject" id="form-subject" placeholder="Role Title / Project Scope" required>
+        <textarea name="message" id="form-message" rows="6" placeholder="Project details, role expectations, timelines..." required></textarea>
+        
+        <button type="submit" class="btn btn-primary" id="submit-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          Submit Work Proposal
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ================= TOAST NOTIFICATION ================= -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#edbb00" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-top-accent"></div>
+
+    <div class="footer__container">
+      
+      <!-- Brand & Mission -->
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">HARISH <span class="logo-s">S</span></a>
+        <p class="footer__tagline">
+          Cybersecurity Engineer focused on Network Defense, Ethical Hacking &amp; Reverse Engineering.
+        </p>
+        <div class="footer__status-badge">
+          <span class="status-pulse-dot"></span>
+          <span>Open to Full-time Opportunities (Batch 2026)</span>
+        </div>
+      </div>
+
+      <!-- Quick Permalinks -->
+      <div class="footer__nav-group">
+        <h4>Navigation</h4>
+        <ul class="permalinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#work">Work With Me</a></li>
+        </ul>
+      </div>
+
+      <!-- Social & Direct Channels -->
+      <div class="footer__socials-group">
+        <h4>Connect &amp; Collaborate</h4>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/harish-s-478b7a325?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/harish1630" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:joy862380@gmail.com" title="Email Harish" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="tel:+916385823231" title="Call Harish" aria-label="Phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+        </div>
+        <p class="footer__contact-note">
+          Chennai, India • <a href="mailto:joy862380@gmail.com">joy862380@gmail.com</a>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Back to Top -->
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        <small>&copy; 2026 Harish S. All rights reserved. Red &amp; Blue Chromatic Dual-Mode Edition.</small>
+      </div>
+      <a href="#home" class="footer__back-to-top" title="Back to top">
+        <span>Back to Top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Logic Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
